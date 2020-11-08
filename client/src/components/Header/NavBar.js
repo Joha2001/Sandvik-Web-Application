@@ -13,7 +13,7 @@ const NavBar = () => {
             {/* Page Links */}
             <div className = "nav-items">
                 <Link className = "nav-link" to='/Home'>Home</Link>
-                <Link className = "nav-link" to='/Register'>Extra Page</Link>
+                <Link className = "nav-link" to='/Input'>Parameter Inputs</Link>
                 <a className = "nav-link" target='_blank' rel="noopener noreferrer" href="https://reactjs.org/docs/getting-started.html">
                     React Docs
                 </a>
