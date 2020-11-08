@@ -15,7 +15,6 @@ function Input(props) {
             '\nYour Material is: ' + Material);
     }
 
-
     return (
         <form id="Parameter-List" onSubmit={() => handleSubmit()}>
             <label>
