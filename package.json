@@ -1,4 +1,10 @@
 {
   "private": true,
-  "workspaces": ["client", "server"]
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "xlsx": "^0.16.8"
+  }
 }
