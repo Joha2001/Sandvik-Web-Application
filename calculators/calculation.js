@@ -1,6 +1,6 @@
 const xlsx = require("xlsx");
 
-let wb = xlsx.readFile("Key_Production_Calculator_v2.xlsx", {cellDates:true});
+let wb = xlsx.readFile("calculators/Key_Production_Calculator_v2.xlsx", {cellDates:true});
 
 let ws = wb.Sheets["Calculator"];
 
