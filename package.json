@@ -1,4 +1,12 @@
 {
   "private": true,
-  "workspaces": ["client", "server"]
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "xlsx": "^0.16.8",
+    "bootstrap": "^4.5.3",
+    "react-bootstrap": "^1.4.0"
+  }
 }
