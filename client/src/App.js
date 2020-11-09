@@ -1,6 +1,8 @@
 import React from 'react';
-import { Route, Switch, Redirect  } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from "./views/Home/Home";
+import Input from "./views/Input/Input"
+import History from "./views/History/History"
 import NotFound from "./views/NotFound";
 import NavBar from "./components/Header/NavBar";
 
@@ -10,10 +12,12 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route exact path="/Home" component={Home} />
+        <Route exact path="/Input" component={Input} />
+        <Route exact path="/Input" component={History} />
         <Route exact path="/">
           <Redirect to="/Home" />
         </Route>
-        <Route component={NotFound}/>
+        <Route component={NotFound} />
       </Switch>
     </div>
   );
