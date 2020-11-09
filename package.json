@@ -5,6 +5,7 @@
     "server"
   ],
   "dependencies": {
+    "aws-amplify": "^3.3.7",
     "bootstrap": "^4.5.3",
     "nodemon": "^2.0.6",
     "react": "^17.0.1",

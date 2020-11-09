@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from "./views/Home/Home";
 import Input from "./views/Input/Input"
@@ -7,6 +7,7 @@ import NotFound from "./views/NotFound";
 import NavBar from "./components/Header/NavBar";
 import Login from "./views/Login/Login"
 const App = () => {
+  const [isAuthenticated, userHasAuthenticated] = useState(false);
   return (
     <div>
       <NavBar />
