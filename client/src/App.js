@@ -5,7 +5,7 @@ import Input from "./views/Input/Input"
 import History from "./views/History/History"
 import NotFound from "./views/NotFound";
 import NavBar from "./components/Header/NavBar";
-
+import Login from "./views/Login/Login"
 const App = () => {
   return (
     <div>
@@ -14,6 +14,7 @@ const App = () => {
         <Route exact path="/Home" component={Home} />
         <Route exact path="/Input" component={Input} />
         <Route exact path="/Input" component={History} />
+        <Route exact path="/Login" component={Login} />
         <Route exact path="/">
           <Redirect to="/Home" />
         </Route>
