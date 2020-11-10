@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from "react";
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from "./views/Home/Home";
-import Input from "./views/Input/Input"
-import History from "./views/History/History"
+import Calc from "./views/Calc/calc";
+import History from "./views/History/History";
 import NotFound from "./views/NotFound";
 import NavBar from "./components/Header/NavBar";
 
 const App = () => {
+
   return (
     <div>
       <NavBar />
-      <Switch>
+      <Switch >
         <Route exact path="/Home" component={Home} />
-        <Route exact path="/Input" component={Input} />
-        <Route exact path="/Input" component={History} />
+        <Route exact path="/Calculator" component={Calc} />
+        <Route exact path="/History" component={History} />
         <Route exact path="/">
           <Redirect to="/Home" />
         </Route>
