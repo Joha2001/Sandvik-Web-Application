@@ -112,7 +112,7 @@ const Input = () => {
             {!submitting &&
                 <div>
                     <div>
-                        Your Paramter List: {input.Rig}, {input.Dia}m, {input.Dep}m, {input.Mat}, {input.Ele}m, {input.Tem}C
+                        Your Parameter List: {input.Rig}, {input.Dia}m, {input.Dep}m, {input.Mat}, {input.Ele}m, {input.Tem}C
                     <p>
                             Your Rotary Drill: {output.Drill}
                         </p>
