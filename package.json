@@ -16,5 +16,9 @@
     "react-scripts": "^4.0.0",
     "xlsx": "^0.16.8",
     "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "start": "cd server && node server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
   }
 }

@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "concurrently \\\"nodemon server.js\\\" \\\"cd ../client && npm run start\\\"",
     "build": "cd ../client && npm build",

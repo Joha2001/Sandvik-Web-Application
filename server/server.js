@@ -21,7 +21,7 @@ const app = express();
 
 //enable request logging for development debugging
 app.use(morgan('dev'));
-
+app.use(express.static(path.join(__dirname, 'client/build')));
 //body parsing middleware
 app.use(bodyParser.urlencoded({
     extended: true
