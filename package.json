@@ -4,6 +4,9 @@
     "client",
     "server"
   ],
+  "engines": {
+    "node": "14.10.1"
+  },
   "dependencies": {
     "aws-amplify": "^3.3.7",
     "bootstrap": "^4.5.3",
