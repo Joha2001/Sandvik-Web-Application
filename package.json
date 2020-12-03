@@ -18,8 +18,10 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "node server/server.js",
-    "heroku-postbuild": "cd client && yarn && yarn run build"
+    "start": "cd server && node server.js",
+    "build": "cd client && npm install",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "type": "module"
 }
