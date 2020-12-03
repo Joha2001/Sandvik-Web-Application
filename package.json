@@ -19,9 +19,6 @@
   },
   "scripts": {
     "start": "cd server && node server.js",
-    "build": "cd client && npm install",
-    "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build"
-  },
-  "type": "module"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  }
 }
