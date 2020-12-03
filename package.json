@@ -18,7 +18,8 @@
     "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "cd server && node server.js",
+    "start": "node server/server.js",
     "heroku-postbuild": "cd client && yarn && yarn run build"
-  }
+  },
+  "type": "module"
 }
