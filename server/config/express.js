@@ -13,8 +13,14 @@ module.exports.init = () => {
     mongoose.connect(process.env.DB_URI || require('./config').db.uri, {
         useNewUrlParser: true
     });
+
+    mongoose.connection.on('connected', () => {
+        console.log('Mongoose is connected!')
+    });
     mongoose.set('useCreateIndex', true);
     mongoose.set('useFindAndModify', false);
+
+
 
     // initialize app
     const app = express();
@@ -28,7 +34,6 @@ module.exports.init = () => {
     // add a router
     app.use('/api/example', exampleRouter);
 
-        if (process.env.NODE_ENV === 'production') {
         // Serve any static files
         app.use(express.static(path.join(__dirname, '../../client/build')));
 
@@ -36,7 +41,6 @@ module.exports.init = () => {
         app.get('*', function(req, res) {
             res.sendFile(path.join(__dirname, '../../client/build', 'index.html'));
         });
-    }
 
 
     return app
