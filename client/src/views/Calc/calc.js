@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './calc.css'
-
+import NavBar from '../../components/Header/NavBar'
+import { Redirect } from 'react-router-dom';
+import isLoggedIn from '../../helpers/is_logged_in';
 const Input = () => {
+    
     const [input, setInput] = useState({})
     const [output, setOutput] = useState({})
     const [submitting, setSubmitting] = useState(true);
@@ -60,9 +63,12 @@ const Input = () => {
         setOutput(outSchema);
         toggle();
     }
-
+    if (!isLoggedIn()) {
+        return <Redirect to="/Login" />;
+      }
     return (
         <div>
+            <NavBar></NavBar>
             <header className="calc-header">{submitting ? 'Inputs' : 'Results'}</header>
             {submitting &&
                 <form id="Parameter-List" onSubmit={() => { handleIn(); handleOut(); handleSubmit(); }}>

@@ -1,52 +1,84 @@
-import React, { useState } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import "./Login.css";
-import { Auth } from "aws-amplify";
+import React from 'react';
+import { Grid, Form, Header, Message, Segment } from 'semantic-ui-react';
+import store from 'store';
+import { Redirect } from 'react-router-dom';
+import isLoggedIn from '../../helpers/is_logged_in';
+import style from './LoginStyle.css';
+import logo from '../../assets/logo.svg';
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      username: '',
+      password: '',
+      error: false,
+    };
 
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
+    this.handleChange = this.handleChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-  
-    try {
-      await Auth.signIn(email, password);
-      alert("Logged in");
-    } catch (e) {
-      alert(e.message);
+  onSubmit(e) {
+    e.preventDefault();
+
+    const { username, password } = this.state;
+    const { history } = this.props;
+
+    this.setState({ error: false });
+
+    if (!(username === 'SandvikWebApp' && password === 'Password')) {
+      return this.setState({ error: true });
     }
+
+    store.set('loggedIn', true);
+    history.push('/Home');
   }
 
-  return (
-    <div className="Login">
-      <form onSubmit={handleSubmit}>
-        <FormGroup controlId="email" bsSize="large">
-          <FormLabel>Email</FormLabel>
-          <FormControl
-            autoFocus
-            type="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-          />
-        </FormGroup>
-        <FormGroup controlId="password" bsSize="large">
-          <FormLabel>Password</FormLabel>
-          <FormControl
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            type="password"
-          />
-        </FormGroup>
-        <Button block bsSize="large" disabled={!validateForm()} type="submit">
-          Login
-        </Button>
-      </form>
-    </div>
-  );
+  handleChange(e, { name, value }) {
+    this.setState({ [name]: value });
+  }
+
+  render() {
+    const { error } = this.state;
+
+    if (isLoggedIn()) {
+      return <Redirect to="/Home" />;
+    }
+
+    return (
+      <Grid textAlign='center' style={style} verticalAlign='middle'>
+        <Grid.Column style={{ maxWidth: 10000 }}>
+          <Form size = 'large' error={error} onSubmit={this.onSubmit}>
+            <img src={logo} className="App-logo" alt="logo" />
+            <Header as="h2">Login</Header>
+            {error && <Message
+              error={error}
+              content="That username/password is incorrect. Try again!"
+            />}
+            <Segment stacked>
+            <Form.Input
+              fluid icon= 'user'
+              inline
+              label="Username"
+              name="username"
+              onChange={this.handleChange}
+            />
+            <Form.Input
+              inline
+              label="Password"
+              type="password"
+              name="password"
+              onChange={this.handleChange}
+            />
+            </Segment>
+            <Form.Button type="submit">Sign In</Form.Button>
+          </Form>
+        </Grid.Column>
+      </Grid>
+    );
+  }
 }
+
+export default Login;
+
