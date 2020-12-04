@@ -4,6 +4,9 @@
     "client",
     "server"
   ],
+  "engines": {
+    "node": "14.10.1"
+  },
   "dependencies": {
     "aws-amplify": "^3.3.7",
     "bootstrap": "^4.5.3",
@@ -16,5 +19,9 @@
     "react-scripts": "^4.0.0",
     "xlsx": "^0.16.8",
     "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "start": "cd server && node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   }
 }

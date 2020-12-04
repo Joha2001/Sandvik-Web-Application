@@ -2,22 +2,17 @@ import React, { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from "./views/Home/Home";
 import Calc from "./views/Calc/calc";
-import History from "./views/History/History";
 import NotFound from "./views/NotFound";
-import NavBar from "./components/Header/NavBar";
 import Login from "./views/Login/Login"
 const App = () => {
 
-  const [isAuthenticated, userHasAuthenticated] = useState(false);
   return (
-    <div>
-      <NavBar />
-      <Switch >
-        <Route exact path="/Home" component={Home} />
-        <Route exact path="/Calculator" component={Calc} />
-        <Route exact path="/History" component={History} />
-        <Route exact path="/Login" component={Login} />
-        <Route exact path="/">
+    <div className ="app-routes">
+      <Switch>
+        <Route path="/Login" component={Login} />
+        <Route path="/Home" component={Home} />
+        <Route path="/Calculator" component={Calc} />
+        <Route path="/">
           <Redirect to="/Home" />
         </Route>
         <Route component={NotFound} />
