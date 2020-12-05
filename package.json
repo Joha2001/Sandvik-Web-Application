@@ -4,8 +4,24 @@
     "client",
     "server"
   ],
+  "engines": {
+    "node": "14.10.1"
+  },
   "dependencies": {
+    "aws-amplify": "^3.3.7",
     "bootstrap": "^4.5.3",
-    "react-bootstrap": "^1.4.0"
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-bootstrap": "^0.33.1",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^6.11.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "xlsx": "^0.16.8",
+    "yarn": "^1.22.10"
+  },
+  "scripts": {
+    "start": "cd server && node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   }
 }
