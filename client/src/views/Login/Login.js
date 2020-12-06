@@ -49,7 +49,7 @@ class Login extends React.Component {
     return (
       <Grid textAlign='center' style={style} verticalAlign='middle'>
         <Grid.Column style={{ maxWidth: 10000 }}>
-          <Form size = 'large' error={error} onSubmit={this.onSubmit}>
+          <Form size='large' error={error} onSubmit={this.onSubmit}>
             <img src={logo} className="App-logo" alt="logo" />
             <Header as="h2">Login</Header>
             {error && <Message
@@ -57,20 +57,20 @@ class Login extends React.Component {
               content="That username/password is incorrect. Try again!"
             />}
             <Segment stacked>
-            <Form.Input
-              fluid icon= 'user'
-              inline
-              label="Username"
-              name="username"
-              onChange={this.handleChange}
-            />
-            <Form.Input
-              inline
-              label="Password"
-              type="password"
-              name="password"
-              onChange={this.handleChange}
-            />
+              <Form.Input
+                fluid icon='user'
+                inline
+                label="Username"
+                name="username"
+                onChange={this.handleChange}
+              />
+              <Form.Input
+                inline
+                label="Password"
+                type="password"
+                name="password"
+                onChange={this.handleChange}
+              />
             </Segment>
             <Form.Button type="submit">Sign In</Form.Button>
           </Form>

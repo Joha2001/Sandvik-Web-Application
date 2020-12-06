@@ -2,5 +2,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(20px + 2vmin);
+}
+
+.calc-input {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.calc-form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.calc-navbar{
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.calc-background{
+    background-color: #282c34;
+}
+
+.calc-button{
+  background-color: #09d3ac;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
