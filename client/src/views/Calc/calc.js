@@ -59,7 +59,7 @@ const Input = () => {
 
     function handleSubmit() {
         setInput(inSchema);
-        setOutput(getVaildBits(Bit, all_drills));
+        setOutput(getVaildBits(Bit, Bench, Sub_Drilling, all_drills));
         toggle();
     }
     if (!isLoggedIn()) {
