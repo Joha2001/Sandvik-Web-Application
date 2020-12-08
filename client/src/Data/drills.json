@@ -188,5 +188,35 @@
         "depthTotal": 43,
         "pullDown": 10600,
         "maxUCS": 999999
+    },
+    {
+        "drillName": "160D",
+        "bitMin": 105,
+        "bitMax": 140,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 30,
+        "pullDown": 30000,
+        "maxUCS": 9999999
+    },
+    {
+        "drillName": "DR460 48",
+        "bitMin": 203,
+        "bitMax": 279,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 63,
+        "pullDown": 80000,
+        "maxUCS": 1723
+    },
+    {
+        "drillName": "DR460 63",
+        "bitMin": 229,
+        "bitMax": 279,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 31,
+        "pullDown": 80000,
+        "maxUCS": 2099
     }
 ]
