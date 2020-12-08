@@ -3,9 +3,12 @@ import './calc.css'
 import NavBar from '../../components/Header/NavBar'
 import { Redirect } from 'react-router-dom';
 import isLoggedIn from '../../helpers/is_logged_in';
-const Input = (props) => {
+import drills from '../../Data/drills.json';
+import { getVaildBits } from '../../helpers/functions';
+
+const Input = () => {
     const [input, setInput] = useState({})
-    const [output, setOutput] = useState({})
+    const [output, setOutput] = useState([])
     const [submitting, setSubmitting] = useState(true);
     const toggle = () => { setSubmitting(!submitting) };
 
@@ -22,9 +25,15 @@ const Input = (props) => {
     let targetProdTon;
     let inSchema = {};
 
-    let RotaryDrill;
-    let Savings;
-    let outSchema = {};
+    let validDrills = [];
+
+    let all_drills = [];
+    let id = 1;
+    drills.forEach(element => {
+        element["id"] = id
+        all_drills.push(element)
+        id++
+    });
 
     function handleIn() {
         inSchema = {
@@ -43,20 +52,14 @@ const Input = (props) => {
         }
     }
 
-    function handleOut() {
-        RotaryDrill = 'Test';
-        Savings = 12345;
-
-        outSchema = {
-            Drill: RotaryDrill,
-            Sav: Savings,
-        }
+    const displayDrills = () => {
+        return output.map((drill) => <li>{drill.drillName}</li>);
     }
 
 
     function handleSubmit() {
         setInput(inSchema);
-        setOutput(outSchema);
+        setOutput(getVaildBits(Bit, all_drills));
         toggle();
     }
     if (!isLoggedIn()) {
@@ -70,7 +73,7 @@ const Input = (props) => {
             <header className="calc-header">{submitting ? 'Inputs' : 'Results'}</header>
             <div className="calc-form">
                 {submitting &&
-                    <form id="Parameter-List" onSubmit={() => { handleIn(); handleOut(); handleSubmit(); }}>
+                    <form id="Parameter-List" onSubmit={() => { handleIn(); handleSubmit(); }}>
                         BIT (mm):
                 <input className="calc-input"
                             type="number"
@@ -109,7 +112,7 @@ const Input = (props) => {
                         </p>
                     Current Pen Rate (m/hr):
                 <input className="calc-input"
-                            type="number"
+                            type="text"
                             onChange={(e) => { penRate = e.target.value }}
                             required />
                         <p>
@@ -146,9 +149,9 @@ const Input = (props) => {
                         <div>
                             Your Paramter List: {input.bit}, {input.bur}m, {input.spa}m
                     <p>
-                                Your Rotary Drill: {output.Drill}
+                                {displayDrills()}
                             </p>
-                    Your Savings: ${output.Sav}
+
                         </div>
                         <button className="calc-button" onClick={() => toggle()}>Return</button>
                     </div>
