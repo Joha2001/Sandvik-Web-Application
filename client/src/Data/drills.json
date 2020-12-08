@@ -138,5 +138,55 @@
         "depthTotal": 53,
         "pullDown": 50000,
         "maxUCS": 1197
+    },
+    {
+        "drillName": "D45KS 34",
+        "bitMin": 152,
+        "bitMax": 229,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 45,
+        "pullDown": 45000,
+        "maxUCS": 999999
+    },
+    {
+        "drillName": "D45KS 40",
+        "bitMin": 152,
+        "bitMax": 229,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 53,
+        "pullDown": 45000,
+        "maxUCS": 999999
+    },
+    {
+        "drillName": "DR540",
+        "bitMin": 105,
+        "bitMax": 203,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 43,
+        "pullDown": 10600,
+        "maxUCS": 999999
+    },
+    {
+        "drillName": "DR560",
+        "bitMin": 130,
+        "bitMax": 203,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 43,
+        "pullDown": 10600,
+        "maxUCS": 999999
+    },
+    {
+        "drillName": "DR580",
+        "bitMin": 152,
+        "bitMax": 254,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 43,
+        "pullDown": 10600,
+        "maxUCS": 999999
     }
 ]
