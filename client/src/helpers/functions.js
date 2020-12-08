@@ -2,7 +2,7 @@
  * Write all your functions here and export them to use in each respective component
  */
 
-const getVaildBits = (bit, bench, sub_drilling, allDrills) => {
+const getVaildDrills = (bit, bench, sub_drilling, density, allDrills) => {
     for (let i = 0; i < allDrills.length; i++) {
         if (allDrills[i].bitMin > bit || allDrills[i].bitMax < bit) {
             allDrills.splice(i, 1);
@@ -18,11 +18,18 @@ const getVaildBits = (bit, bench, sub_drilling, allDrills) => {
         }
     }
 
+    for (let i = 0; i < allDrills.length; i++) {
+        if (density > allDrills[i].maxUCS) {
+            allDrills.splice(i, 1);
+            i--;
+        }
+    }
+
     return allDrills;
 }
 
 
 
 export {
-    getVaildBits
+    getVaildDrills
 };
