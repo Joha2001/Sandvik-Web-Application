@@ -1,0 +1,142 @@
+[
+    {
+        "drillName": "D245S",
+        "bitMin": 127,
+        "bitMax": 203,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 45,
+        "pullDown": 45000,
+        "maxUCS": 1352
+    },
+    {
+        "drillName": "D25KS",
+        "bitMin": 127,
+        "bitMax": 171,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 28,
+        "pullDown": 30000,
+        "maxUCS": 1186
+    },
+    {
+        "drillName": "D55SP",
+        "bitMin": 172,
+        "bitMax": 254,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 32,
+        "pullDown": 55000,
+        "maxUCS": 1317
+    },
+    {
+        "drillName": "D75KS 40",
+        "bitMin": 229,
+        "bitMax": 279,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 74,
+        "pullDown": 75000,
+        "maxUCS": 1615
+    },
+    {
+        "drillName": "DR412i MP",
+        "bitMin": 229,
+        "bitMax": 311,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 76,
+        "pullDown": 80000,
+        "maxUCS": 1546
+    },
+    {
+        "drillName": "DR412i SP",
+        "bitMin": 229,
+        "bitMax": 311,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 33,
+        "pullDown": 80000,
+        "maxUCS": 1546
+    },
+    {
+        "drillName": "D90KS 46",
+        "bitMin": 229,
+        "bitMax": 349,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 84,
+        "pullDown": 110000,
+        "maxUCS": 2126
+    },
+    {
+        "drillName": "D90KS 72",
+        "bitMin": 229,
+        "bitMax": 349,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 19,
+        "pullDown": 110000,
+        "maxUCS": 2126
+    },
+    {
+        "drillName": "1190E 46",
+        "bitMin": 229,
+        "bitMax": 349,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 84,
+        "pullDown": 110000,
+        "maxUCS": 2126
+    },
+    {
+        "drillName": "1190E 72",
+        "bitMin": 229,
+        "bitMax": 349,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 19,
+        "pullDown": 110000,
+        "maxUCS": 2126
+    },
+    {
+        "drillName": "DR416i",
+        "bitMin": 311,
+        "bitMax": 406,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 19,
+        "pullDown": 120000,
+        "maxUCS": 1776
+    },
+    {
+        "drillName": "D50KS 34",
+        "bitMin": 152,
+        "bitMax": 254,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 45,
+        "pullDown": 50000,
+        "maxUCS": 1197
+    },
+    {
+        "drillName": "D50KS 40",
+        "bitMin": 152,
+        "bitMax": 254,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 53,
+        "pullDown": 50000,
+        "maxUCS": 1197
+    },
+    {
+        "drillName": "D50KS 40",
+        "bitMin": 152,
+        "bitMax": 254,
+        "bench": 0,
+        "subDrilling": 0,
+        "depthTotal": 53,
+        "pullDown": 50000,
+        "maxUCS": 1197
+    }
+]
