@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import isLoggedIn from '../../helpers/is_logged_in';
 import style from './LoginStyle.css';
 import logo from '../../assets/logo.svg';
-class Login extends React.Component {
+class Login extends React.Component { //Based off react router demo
   constructor(props) {
     super(props);
 
