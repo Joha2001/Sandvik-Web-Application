@@ -137,7 +137,7 @@ const Input = () => {
                             onChange={(e) => { meterDrilled = e.target.value }}
                             required />
 
-                            Target Utilization (%):
+                            Target Utilization (%) (Fleet Utilization * Mech. Availability * Operator Efficiency):
                 <input className="calc-input"
                             type="number"
                             onChange={(e) => { targetUtil = e.target.value }}
@@ -163,7 +163,7 @@ const Input = () => {
                     <div>
                         Input Paramters
                         <p>{viewInputs(input)}</p>
-                        Avaible Drills
+                        Available Drills
                         <p>{viewDrills(output)}</p>
 
 
