@@ -4,14 +4,13 @@ import NavBar from '../../components/Header/NavBar'
 import { Redirect } from 'react-router-dom';
 import isLoggedIn from '../../helpers/is_logged_in';
 import drills from '../../Data/drills.json';
-import { getVaildDrills, getDrillReq, getNetPen } from '../../helpers/functions';
+import { getVaildDrills } from '../../helpers/functions';
 import viewInputs from './viewInputs';
 import viewDrills from './viewDrills';
 
 const Input = () => {
     const [input, setInput] = useState({})
     const [output, setOutput] = useState([])
-    const [drillReq, setDrillReq] = useState(0);
     const [submitting, setSubmitting] = useState(true);
     const toggle = () => { setSubmitting(!submitting) };
 
@@ -29,6 +28,7 @@ const Input = () => {
     let targetProdTon;
     let drillingIdx;
     let inSchema = {};
+
 
 
     let all_drills = [];
@@ -60,8 +60,7 @@ const Input = () => {
 
     function handleSubmit() {
         setInput(inSchema);
-        setDrillReq((getDrillReq(targetProdTon, Burden, Spacing, Bench, Sub_Drilling, TONDensity)));
-        setOutput(getVaildDrills(Bit, Bench, Sub_Drilling, UCSDensity, penRate, drillReq, all_drills));
+        setOutput(getVaildDrills(Bit, Bench, Sub_Drilling, UCSDensity, TONDensity, penRate, targetProdTon, Burden, Spacing, targetUtil, all_drills));
 
         toggle();
     }
@@ -166,7 +165,7 @@ const Input = () => {
                         <p>{viewInputs(input)}</p>
                         Avaible Drills
                         <p>{viewDrills(output)}</p>
-                        <p>Drilling Required: {Math.ceil(drillReq)}(ft)</p>
+
 
                         <button className="calc-button" onClick={() => toggle()}>Return</button>
                     </div>

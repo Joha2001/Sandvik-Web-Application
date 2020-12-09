@@ -14,17 +14,25 @@ function viewDrills(output) {
             <Table size="large" aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Drills</TableCell>
-                        <TableCell align="right">Net Penetration Rate</TableCell>
-                        <TableCell align="right">Hours Drilled</TableCell>
+                        <TableCell >Drills</TableCell>
+                        <TableCell align="right">Drilling Required (ft)</TableCell>
+                        <TableCell align="right">Net Penetration Rate (ft/hr)</TableCell>
+                        <TableCell align="right">Hours Drilled (hr)</TableCell>
+                        <TableCell align="right">Fleet Size (drills)</TableCell>
+                        <TableCell align="right">Fleet Capacity (m)</TableCell>
+                        <TableCell align="right">Fleet Capacity (ton)</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {output.map((drill) => (
                         <TableRow key={drill.drillName}>
                             <TableCell component="th" scope="row">{drill.drillName}</TableCell>
-                            <TableCell align="right">{drill.NetPen}</TableCell>
-                            <TableCell align="right">{drill.HoursDrilled}</TableCell>
+                            <TableCell align="right">{Math.ceil(drill.DrillReq)}</TableCell>
+                            <TableCell align="right">{drill.NetPen.toFixed(1)}</TableCell>
+                            <TableCell align="right">{Math.ceil(drill.HoursDrilled)}</TableCell>
+                            <TableCell align="right">{Math.ceil(drill.FleetSize)}</TableCell>
+                            <TableCell align="right">{Math.ceil(drill.FleetCapM)}</TableCell>
+                            <TableCell align="right">{Math.ceil(drill.FleetCapT)}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

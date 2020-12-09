@@ -12,7 +12,11 @@
         "PipeLength": 30,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D25KS",
@@ -27,7 +31,11 @@
         "PipeLength": 30,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D55SP",
@@ -42,7 +50,11 @@
         "PipeLength": 25,
         "SetUp": 2.5,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D75KS 40",
@@ -57,7 +69,11 @@
         "PipeLength": 35,
         "SetUp": 2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR412i MP",
@@ -72,7 +88,11 @@
         "PipeLength": 42,
         "SetUp": 1.2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR412i SP",
@@ -87,7 +107,11 @@
         "PipeLength": 25,
         "SetUp": 2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D90KS 46",
@@ -102,7 +126,11 @@
         "PipeLength": 40,
         "SetUp": 2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D90KS 72",
@@ -117,7 +145,11 @@
         "PipeLength": 32.5,
         "SetUp": 3,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "1190E 46",
@@ -132,7 +164,11 @@
         "PipeLength": 40,
         "SetUp": 3,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "1190E 72",
@@ -147,7 +183,11 @@
         "PipeLength": 42.5,
         "SetUp": 4,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR416i",
@@ -162,7 +202,11 @@
         "PipeLength": 32.5,
         "SetUp": 3,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D50KS 34",
@@ -177,7 +221,11 @@
         "PipeLength": 30,
         "SetUp": 1.5,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D50KS 40",
@@ -192,7 +240,11 @@
         "PipeLength": 35,
         "SetUp": 2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D45KS 34",
@@ -207,7 +259,11 @@
         "PipeLength": 30,
         "SetUp": 1.5,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "D45KS 40",
@@ -222,7 +278,11 @@
         "PipeLength": 35,
         "SetUp": 2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR540",
@@ -237,7 +297,11 @@
         "PipeLength": 20,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR560",
@@ -252,7 +316,11 @@
         "PipeLength": 20,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR580",
@@ -267,7 +335,11 @@
         "PipeLength": 20,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "160D",
@@ -282,7 +354,11 @@
         "PipeLength": 25,
         "SetUp": 1,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR460 48",
@@ -297,7 +373,11 @@
         "PipeLength": 42,
         "SetUp": 1.2,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     },
     {
         "drillName": "DR460 63",
@@ -312,6 +392,10 @@
         "PipeLength": 25,
         "SetUp": 3,
         "NetPen": 0,
-        "HoursDrilled": 0
+        "HoursDrilled": 0,
+        "DrillReq": 0,
+        "FleetSize": 0,
+        "FleetCapM": 0,
+        "FleetCapT": 0
     }
 ]
