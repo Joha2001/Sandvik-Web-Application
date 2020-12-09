@@ -7,7 +7,12 @@
         "subDrilling": 0,
         "depthTotal": 45,
         "pullDown": 45000,
-        "maxUCS": 1352
+        "maxUCS": 1352,
+        "Retract": 207,
+        "PipeLength": 30,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D25KS",
@@ -17,7 +22,12 @@
         "subDrilling": 0,
         "depthTotal": 28,
         "pullDown": 30000,
-        "maxUCS": 1186
+        "maxUCS": 1186,
+        "Retract": 217,
+        "PipeLength": 30,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D55SP",
@@ -27,7 +37,12 @@
         "subDrilling": 0,
         "depthTotal": 32,
         "pullDown": 55000,
-        "maxUCS": 1317
+        "maxUCS": 1317,
+        "Retract": 171,
+        "PipeLength": 25,
+        "SetUp": 2.5,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D75KS 40",
@@ -37,7 +52,12 @@
         "subDrilling": 0,
         "depthTotal": 74,
         "pullDown": 75000,
-        "maxUCS": 1615
+        "maxUCS": 1615,
+        "Retract": 114,
+        "PipeLength": 35,
+        "SetUp": 2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR412i MP",
@@ -47,7 +67,12 @@
         "subDrilling": 0,
         "depthTotal": 76,
         "pullDown": 80000,
-        "maxUCS": 1546
+        "maxUCS": 1546,
+        "Retract": 176,
+        "PipeLength": 42,
+        "SetUp": 1.2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR412i SP",
@@ -57,7 +82,12 @@
         "subDrilling": 0,
         "depthTotal": 33,
         "pullDown": 80000,
-        "maxUCS": 1546
+        "maxUCS": 1546,
+        "Retract": 144,
+        "PipeLength": 25,
+        "SetUp": 2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D90KS 46",
@@ -67,7 +97,12 @@
         "subDrilling": 0,
         "depthTotal": 84,
         "pullDown": 110000,
-        "maxUCS": 2126
+        "maxUCS": 2126,
+        "Retract": 120,
+        "PipeLength": 40,
+        "SetUp": 2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D90KS 72",
@@ -77,7 +112,12 @@
         "subDrilling": 0,
         "depthTotal": 19,
         "pullDown": 110000,
-        "maxUCS": 2126
+        "maxUCS": 2126,
+        "Retract": 98,
+        "PipeLength": 32.5,
+        "SetUp": 3,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "1190E 46",
@@ -87,7 +127,12 @@
         "subDrilling": 0,
         "depthTotal": 84,
         "pullDown": 110000,
-        "maxUCS": 2126
+        "maxUCS": 2126,
+        "Retract": 120,
+        "PipeLength": 40,
+        "SetUp": 3,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "1190E 72",
@@ -97,7 +142,12 @@
         "subDrilling": 0,
         "depthTotal": 19,
         "pullDown": 110000,
-        "maxUCS": 2126
+        "maxUCS": 2126,
+        "Retract": 98,
+        "PipeLength": 42.5,
+        "SetUp": 4,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR416i",
@@ -107,7 +157,12 @@
         "subDrilling": 0,
         "depthTotal": 19,
         "pullDown": 120000,
-        "maxUCS": 1776
+        "maxUCS": 1776,
+        "Retract": 140,
+        "PipeLength": 32.5,
+        "SetUp": 3,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D50KS 34",
@@ -117,7 +172,12 @@
         "subDrilling": 0,
         "depthTotal": 45,
         "pullDown": 50000,
-        "maxUCS": 1197
+        "maxUCS": 1197,
+        "Retract": 164,
+        "PipeLength": 30,
+        "SetUp": 1.5,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D50KS 40",
@@ -127,17 +187,12 @@
         "subDrilling": 0,
         "depthTotal": 53,
         "pullDown": 50000,
-        "maxUCS": 1197
-    },
-    {
-        "drillName": "D50KS 40",
-        "bitMin": 152,
-        "bitMax": 254,
-        "bench": 0,
-        "subDrilling": 0,
-        "depthTotal": 53,
-        "pullDown": 50000,
-        "maxUCS": 1197
+        "maxUCS": 1197,
+        "Retract": 164,
+        "PipeLength": 35,
+        "SetUp": 2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D45KS 34",
@@ -147,7 +202,12 @@
         "subDrilling": 0,
         "depthTotal": 45,
         "pullDown": 45000,
-        "maxUCS": 999999
+        "maxUCS": 999999,
+        "Retract": 164,
+        "PipeLength": 30,
+        "SetUp": 1.5,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "D45KS 40",
@@ -157,7 +217,12 @@
         "subDrilling": 0,
         "depthTotal": 53,
         "pullDown": 45000,
-        "maxUCS": 999999
+        "maxUCS": 999999,
+        "Retract": 164,
+        "PipeLength": 35,
+        "SetUp": 2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR540",
@@ -167,7 +232,12 @@
         "subDrilling": 0,
         "depthTotal": 43,
         "pullDown": 10600,
-        "maxUCS": 999999
+        "maxUCS": 999999,
+        "Retract": 257,
+        "PipeLength": 20,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR560",
@@ -177,7 +247,12 @@
         "subDrilling": 0,
         "depthTotal": 43,
         "pullDown": 10600,
-        "maxUCS": 999999
+        "maxUCS": 999999,
+        "Retract": 257,
+        "PipeLength": 20,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR580",
@@ -187,7 +262,12 @@
         "subDrilling": 0,
         "depthTotal": 43,
         "pullDown": 10600,
-        "maxUCS": 999999
+        "maxUCS": 999999,
+        "Retract": 257,
+        "PipeLength": 20,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "160D",
@@ -197,7 +277,12 @@
         "subDrilling": 0,
         "depthTotal": 30,
         "pullDown": 30000,
-        "maxUCS": 9999999
+        "maxUCS": 9999999,
+        "Retract": 147,
+        "PipeLength": 25,
+        "SetUp": 1,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR460 48",
@@ -207,7 +292,12 @@
         "subDrilling": 0,
         "depthTotal": 63,
         "pullDown": 80000,
-        "maxUCS": 1723
+        "maxUCS": 1723,
+        "Retract": 176,
+        "PipeLength": 42,
+        "SetUp": 1.2,
+        "NetPen": 0,
+        "HoursDrilled": 0
     },
     {
         "drillName": "DR460 63",
@@ -217,6 +307,11 @@
         "subDrilling": 0,
         "depthTotal": 31,
         "pullDown": 80000,
-        "maxUCS": 2099
+        "maxUCS": 2099,
+        "Retract": 144,
+        "PipeLength": 25,
+        "SetUp": 3,
+        "NetPen": 0,
+        "HoursDrilled": 0
     }
 ]

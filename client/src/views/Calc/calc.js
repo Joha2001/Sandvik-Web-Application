@@ -4,13 +4,14 @@ import NavBar from '../../components/Header/NavBar'
 import { Redirect } from 'react-router-dom';
 import isLoggedIn from '../../helpers/is_logged_in';
 import drills from '../../Data/drills.json';
-import { getVaildDrills } from '../../helpers/functions';
+import { getVaildDrills, getDrillReq, getNetPen } from '../../helpers/functions';
 import viewInputs from './viewInputs';
 import viewDrills from './viewDrills';
 
 const Input = () => {
     const [input, setInput] = useState({})
     const [output, setOutput] = useState([])
+    const [drillReq, setDrillReq] = useState(0);
     const [submitting, setSubmitting] = useState(true);
     const toggle = () => { setSubmitting(!submitting) };
 
@@ -19,7 +20,8 @@ const Input = () => {
     let Spacing;
     let Bench;
     let Sub_Drilling;
-    let Density;
+    let UCSDensity
+    let TONDensity;
     let penRate;
     let meterDrilled;
     let targetUtil;
@@ -44,20 +46,23 @@ const Input = () => {
             spa: Spacing,
             ben: Bench,
             sub: Sub_Drilling,
-            den: Density,
+            ucsden: UCSDensity,
+            tonden: TONDensity,
             idx: drillingIdx,
             pen: penRate,
             met: meterDrilled,
             util: targetUtil,
             proHour: targetProdHour,
             proTon: targetProdTon,
-
         }
+
     }
 
     function handleSubmit() {
         setInput(inSchema);
-        setOutput(getVaildDrills(Bit, Bench, Sub_Drilling, Density, all_drills));
+        setDrillReq((getDrillReq(targetProdTon, Burden, Spacing, Bench, Sub_Drilling, TONDensity)));
+        setOutput(getVaildDrills(Bit, Bench, Sub_Drilling, UCSDensity, penRate, drillReq, all_drills));
+
         toggle();
     }
     if (!isLoggedIn()) {
@@ -78,25 +83,25 @@ const Input = () => {
                             onChange={(e) => { Bit = e.target.value }}
                             required />
 
-                            Burden (m):
+                            Burden (ft):
                 <input className="calc-input"
                             type="number"
                             onChange={(e) => { Burden = e.target.value }}
                             required />
 
-                            Spacing (m):
+                            Spacing (ft):
                 <input className="calc-input"
                             type="number"
                             onChange={(e) => { Spacing = e.target.value }}
                             required />
 
-                            Bench (m):
+                            Bench (ft):
                 <input className="calc-input"
                             type="number"
                             onChange={(e) => { Bench = e.target.value }}
                             required />
 
-                            Sub-Drilling (m):
+                            Sub-Drilling (ft):
                 <input className="calc-input"
                             type="number"
                             onChange={(e) => { Sub_Drilling = e.target.value }}
@@ -105,7 +110,13 @@ const Input = () => {
                             Rock Density (UCS):
                 <input className="calc-input"
                             type="number"
-                            onChange={(e) => { Density = e.target.value }}
+                            onChange={(e) => { UCSDensity = e.target.value }}
+                            required />
+
+                            Rock Density (Ton/y^3):
+                <input className="calc-input"
+                            type="number"
+                            onChange={(e) => { TONDensity = e.target.value }}
                             required />
 
 
@@ -115,9 +126,9 @@ const Input = () => {
                             onChange={(e) => { drillingIdx = e.target.value }}
                             required />
 
-                            Current Pen Rate (m/hr):
+                            Current Pen Rate (ft/hr):
                 <input className="calc-input"
-                            type="text"
+                            type="number"
                             onChange={(e) => { penRate = e.target.value }}
                             required />
 
@@ -155,6 +166,7 @@ const Input = () => {
                         <p>{viewInputs(input)}</p>
                         Avaible Drills
                         <p>{viewDrills(output)}</p>
+                        <p>Drilling Required: {Math.ceil(drillReq)}(ft)</p>
 
                         <button className="calc-button" onClick={() => toggle()}>Return</button>
                     </div>

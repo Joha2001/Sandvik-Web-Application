@@ -11,16 +11,20 @@ import Paper from '@material-ui/core/Paper';
 function viewDrills(output) {
     return (
         <TableContainer component={Paper}>
-            <Table aria-label="simple table">
+            <Table size="large" aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Drill</TableCell>
+                        <TableCell>Drills</TableCell>
+                        <TableCell align="right">Net Penetration Rate</TableCell>
+                        <TableCell align="right">Hours Drilled</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {output.map((drill) => (
                         <TableRow key={drill.drillName}>
                             <TableCell component="th" scope="row">{drill.drillName}</TableCell>
+                            <TableCell align="right">{drill.NetPen}</TableCell>
+                            <TableCell align="right">{drill.HoursDrilled}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

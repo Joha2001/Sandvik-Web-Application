@@ -16,13 +16,13 @@ function viewInputs(input) {
                 <TableHead>
                     <TableRow>
                         <TableCell align="right">Bit&nbsp;(mm)</TableCell>
-                        <TableCell align="right">Burden&nbsp;(m)</TableCell>
-                        <TableCell align="right">Spacing&nbsp;(m)</TableCell>
-                        <TableCell align="right">Bench&nbsp;(m)</TableCell>
-                        <TableCell align="right">Sub-Drilling&nbsp;(m)</TableCell>
-                        <TableCell align="right">Rock Density&nbsp;(m)</TableCell>
+                        <TableCell align="right">Burden&nbsp;(ft)</TableCell>
+                        <TableCell align="right">Spacing&nbsp;(ft)</TableCell>
+                        <TableCell align="right">Bench&nbsp;(ft)</TableCell>
+                        <TableCell align="right">Sub-Drilling&nbsp;(ft)</TableCell>
+                        <TableCell align="right">Rock Density&nbsp;(UCS)</TableCell>
                         <TableCell align="right">Drilling Index</TableCell>
-                        <TableCell align="right">Current Pen Rate&nbsp;(m/hr)</TableCell>
+                        <TableCell align="right">Current Pen Rate&nbsp;(ft/hr)</TableCell>
                         <TableCell align="right">Meter Drilled per Shift&nbsp;(m)</TableCell>
                         <TableCell align="right">Target Utilization&nbsp;(%)</TableCell>
                         <TableCell align="right">Target Production Hours/Month&nbsp;(hr)</TableCell>
@@ -36,7 +36,7 @@ function viewInputs(input) {
                         <TableCell align="right">{input.spa}</TableCell>
                         <TableCell align="right">{input.ben}</TableCell>
                         <TableCell align="right">{input.sub}</TableCell>
-                        <TableCell align="right">{input.den}</TableCell>
+                        <TableCell align="right">{input.ucsden}</TableCell>
                         <TableCell align="right">{input.idx}</TableCell>
                         <TableCell align="right">{input.pen}</TableCell>
                         <TableCell align="right">{input.met}</TableCell>
