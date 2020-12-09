@@ -48,11 +48,13 @@ const getVaildDrills = (bit, bench, sub_drilling, UCSdensity, TONdensity, PenRat
         EX23 = Number(EX8) / 60;
         NetPen = (Number(EX21) / Number(EX23)) / .3048;
         HoursDrilled = drillReq / NetPen;
-        fleetSize = HoursDrilled / (((Number(targetUtil) / 100) ** 2) * 6120);
+        fleetSize = Math.ceil(HoursDrilled / ((Number(targetUtil) / 100) * 6000));
 
-        fleetH = fleetSize * 6120 * (Number(targetUtil) / 100);
-        fleetCapM = (fleetH * (drillReq * .3048)) / HoursDrilled;
-        fleetCapT = (tonReq * fleetCapM) / drillReq;
+
+        fleetH = fleetSize * 6000 * (Number(targetUtil) / 100);
+        fleetCapM = (fleetH * (Number(drillReq) * .3048)) / HoursDrilled;
+        fleetCapT = (Number(tonReq) * fleetCapM) / (Number(drillReq) * .3048);
+
 
         allDrills[i]["FleetCapM"] = fleetCapM;
         allDrills[i]["FleetCapT"] = fleetCapT;
